@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import 'react-toastify/dist/ReactToastify.css';
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.Toastify__toast-container {
+  @apply top-4 right-4;
+}
+
+.Toastify__toast {
+  @apply rounded-lg shadow-lg border-0;
+  font-family: 'Inter', sans-serif;
+}
+
+.Toastify__toast--success {
+  @apply bg-green-500 text-white;
+}
+
+.Toastify__toast--error {
+  @apply bg-red-500 text-white;
+}
+
+.Toastify__toast--info {
+  @apply bg-blue-500 text-white;
+}
+
+.Toastify__toast--warning {
+  @apply bg-orange-500 text-white;
+}
+
+.Toastify__progress-bar {
+  @apply bg-white/30;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-300 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-400;
+}
+
+/* Smooth scroll for the main content */
+.main-content {
+  scroll-behavior: smooth;
+}
+
+/* Hide scrollbar for story carousel */
+.story-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.story-scroll {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Heart animation keyframes */
+@keyframes heartPulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+.heart-pulse {
+  animation: heartPulse 0.3s ease-out;
+}
+
+/* Gradient text effect */
+.gradient-text {
+  background: linear-gradient(135deg, #E1306C, #833AB4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Glassmorphism effect */
+.glass-effect {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}

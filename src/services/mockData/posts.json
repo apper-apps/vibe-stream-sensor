@@ -1,0 +1,194 @@
+[
+  {
+    "Id": 1,
+    "userId": 1,
+    "mediaUrl": "https://picsum.photos/400/400?random=1",
+    "mediaType": "image",
+    "caption": "Beautiful sunset captured during my evening walk 🌅 #sunset #photography #nature #vibes",
+    "likes": 234,
+    "comments": [
+      {
+        "Id": 1,
+        "userId": 2,
+        "text": "Absolutely stunning! 😍",
+        "likes": 12,
+        "createdAt": "2024-01-15T10:30:00Z"
+      },
+      {
+        "Id": 2,
+        "userId": 3,
+        "text": "Where was this taken?",
+        "likes": 5,
+        "createdAt": "2024-01-15T11:15:00Z"
+      }
+    ],
+    "createdAt": "2024-01-15T09:45:00Z"
+  },
+  {
+    "Id": 2,
+    "userId": 2,
+    "mediaUrl": "https://picsum.photos/400/600?random=2",
+    "mediaType": "image",
+    "caption": "Coffee and creativity ☕️ Working on something special today! #coffee #work #creative #mood",
+    "likes": 156,
+    "comments": [
+      {
+        "Id": 3,
+        "userId": 1,
+        "text": "That latte art though! ☕️✨",
+        "likes": 8,
+        "createdAt": "2024-01-14T14:20:00Z"
+      }
+    ],
+    "createdAt": "2024-01-14T13:30:00Z"
+  },
+  {
+    "Id": 3,
+    "userId": 3,
+    "mediaUrl": "https://picsum.photos/600/400?random=3",
+    "mediaType": "image",
+    "caption": "Street art discovery in the city 🎨 Love finding hidden gems like this! #streetart #art #urban #explore",
+    "likes": 89,
+    "comments": [],
+    "createdAt": "2024-01-14T11:15:00Z"
+  },
+  {
+    "Id": 4,
+    "userId": 4,
+    "mediaUrl": "https://picsum.photos/400/500?random=4",
+    "mediaType": "image",
+    "caption": "New recipe experiment! 🍝 Homemade pasta with a twist. Recipe in my bio! #cooking #pasta #foodie #homemade",
+    "likes": 198,
+    "comments": [
+      {
+        "Id": 4,
+        "userId": 5,
+        "text": "Looks delicious! Need that recipe 🤤",
+        "likes": 15,
+        "createdAt": "2024-01-13T19:45:00Z"
+      },
+      {
+        "Id": 5,
+        "userId": 1,
+        "text": "Chef skills! 👨‍🍳",
+        "likes": 3,
+        "createdAt": "2024-01-13T20:10:00Z"
+      }
+    ],
+    "createdAt": "2024-01-13T18:22:00Z"
+  },
+  {
+    "Id": 5,
+    "userId": 5,
+    "mediaUrl": "https://picsum.photos/500/400?random=5",
+    "mediaType": "image",
+    "caption": "Golden hour vibes ✨ Sometimes you just need to pause and appreciate the moment #goldenhour #mindfulness #peace",
+    "likes": 267,
+    "comments": [
+      {
+        "Id": 6,
+        "userId": 2,
+        "text": "This is so peaceful 🙏",
+        "likes": 9,
+        "createdAt": "2024-01-13T16:30:00Z"
+      }
+    ],
+    "createdAt": "2024-01-13T15:45:00Z"
+  },
+  {
+    "Id": 6,
+    "userId": 6,
+    "mediaUrl": "https://picsum.photos/400/400?random=6",
+    "mediaType": "image",
+    "caption": "Weekend market haul 🥕🥬 Fresh vegetables for healthy meals ahead! #healthy #farmers market #weekend #fresh",
+    "likes": 124,
+    "comments": [],
+    "createdAt": "2024-01-13T12:10:00Z"
+  },
+  {
+    "Id": 7,
+    "userId": 7,
+    "mediaUrl": "https://picsum.photos/600/500?random=7",
+    "mediaType": "image",
+    "caption": "Concert night! 🎵 Amazing performance by @localband - the energy was incredible! #music #concert #live #energy",
+    "likes": 178,
+    "comments": [
+      {
+        "Id": 7,
+        "userId": 3,
+        "text": "Wish I was there! How was the sound?",
+        "likes": 4,
+        "createdAt": "2024-01-12T23:15:00Z"
+      },
+      {
+        "Id": 8,
+        "userId": 8,
+        "text": "Best show ever! 🔥",
+        "likes": 7,
+        "createdAt": "2024-01-12T23:30:00Z"
+      }
+    ],
+    "createdAt": "2024-01-12T22:45:00Z"
+  },
+  {
+    "Id": 8,
+    "userId": 8,
+    "mediaUrl": "https://picsum.photos/400/600?random=8",
+    "mediaType": "image",
+    "caption": "Morning workout done! 💪 Starting the day with some energy. What's your favorite way to exercise? #workout #morning #fitness #motivation",
+    "likes": 145,
+    "comments": [
+      {
+        "Id": 9,
+        "userId": 4,
+        "text": "Inspiring! I need to get back to morning workouts",
+        "likes": 6,
+        "createdAt": "2024-01-12T08:45:00Z"
+      }
+    ],
+    "createdAt": "2024-01-12T07:30:00Z"
+  },
+  {
+    "Id": 9,
+    "userId": 9,
+    "mediaUrl": "https://picsum.photos/500/500?random=9",
+    "mediaType": "image",
+    "caption": "Book recommendation: Just finished this amazing novel 📚 Couldn't put it down! #reading #books #literature #recommendation",
+    "likes": 92,
+    "comments": [
+      {
+        "Id": 10,
+        "userId": 6,
+        "text": "Added to my reading list! Thanks for the rec 📖",
+        "likes": 2,
+        "createdAt": "2024-01-11T20:20:00Z"
+      }
+    ],
+    "createdAt": "2024-01-11T19:15:00Z"
+  },
+  {
+    "Id": 10,
+    "userId": 10,
+    "mediaUrl": "https://picsum.photos/400/500?random=10",
+    "mediaType": "image",
+    "caption": "Rainy day creativity 🌧️ Working on some digital art while listening to the rain #digitalart #creativity #rainyday #art",
+    "likes": 203,
+    "comments": [
+      {
+        "Id": 11,
+        "userId": 7,
+        "text": "Love your art style! So unique 🎨",
+        "likes": 11,
+        "createdAt": "2024-01-11T16:10:00Z"
+      },
+      {
+        "Id": 12,
+        "userId": 9,
+        "text": "Rainy days are the best for creativity!",
+        "likes": 5,
+        "createdAt": "2024-01-11T16:45:00Z"
+      }
+    ],
+    "createdAt": "2024-01-11T14:30:00Z"
+  }
+]

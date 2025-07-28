@@ -1,0 +1,102 @@
+[
+  {
+    "Id": 1,
+    "username": "alex_photo",
+    "displayName": "Alex Rodriguez",
+    "avatarUrl": "https://i.pravatar.cc/150?img=1",
+    "bio": "📸 Street photographer | 🌍 Travel enthusiast | ☕ Coffee lover",
+    "followers": 2156,
+    "following": 789,
+    "posts": [1]
+  },
+  {
+    "Id": 2,
+    "username": "sarah_creates",
+    "displayName": "Sarah Chen",
+    "avatarUrl": "https://i.pravatar.cc/150?img=2",
+    "bio": "✨ Digital creator | 🎨 UI/UX Designer | 🚀 Building beautiful things",
+    "followers": 1834,
+    "following": 456,
+    "posts": [2]
+  },
+  {
+    "Id": 3,
+    "username": "mike_explorer",
+    "displayName": "Mike Johnson",
+    "avatarUrl": "https://i.pravatar.cc/150?img=3",
+    "bio": "🗺️ Urban explorer | 🎭 Art enthusiast | 📱 Tech geek",
+    "followers": 967,
+    "following": 234,
+    "posts": [3]
+  },
+  {
+    "Id": 4,
+    "username": "chef_emma",
+    "displayName": "Emma Williams",
+    "avatarUrl": "https://i.pravatar.cc/150?img=4",
+    "bio": "👩‍🍳 Home chef | 🥗 Healthy recipes | 📚 Cookbook author",
+    "followers": 3421,
+    "following": 567,
+    "posts": [4]
+  },
+  {
+    "Id": 5,
+    "username": "zen_maya",
+    "displayName": "Maya Patel",
+    "avatarUrl": "https://i.pravatar.cc/150?img=5",
+    "bio": "🧘‍♀️ Mindfulness coach | 🌱 Plant lover | ✍️ Writer",
+    "followers": 1567,
+    "following": 321,
+    "posts": [5]
+  },
+  {
+    "Id": 6,
+    "username": "green_life",
+    "displayName": "David Kim",
+    "avatarUrl": "https://i.pravatar.cc/150?img=6",
+    "bio": "🌿 Sustainable living | 🥬 Organic gardener | 🌍 Environmental advocate",
+    "followers": 892,
+    "following": 178,
+    "posts": [6]
+  },
+  {
+    "Id": 7,
+    "username": "music_lover",
+    "displayName": "Lisa Anderson",
+    "avatarUrl": "https://i.pravatar.cc/150?img=7",
+    "bio": "🎵 Music enthusiast | 🎸 Guitarist | 🎤 Concert reviewer",
+    "followers": 2234,
+    "following": 445,
+    "posts": [7]
+  },
+  {
+    "Id": 8,
+    "username": "fit_journey",
+    "displayName": "Ryan Martinez",
+    "avatarUrl": "https://i.pravatar.cc/150?img=8",
+    "bio": "💪 Fitness trainer | 🏃‍♂️ Marathon runner | 🥗 Nutrition advocate",
+    "followers": 1789,
+    "following": 234,
+    "posts": [8]
+  },
+  {
+    "Id": 9,
+    "username": "bookworm_jen",
+    "displayName": "Jennifer Lee",
+    "avatarUrl": "https://i.pravatar.cc/150?img=9",
+    "bio": "📚 Avid reader | ✍️ Book blogger | 🎭 Literature teacher",
+    "followers": 1123,
+    "following": 389,
+    "posts": [9]
+  },
+  {
+    "Id": 10,
+    "username": "digital_artist",
+    "displayName": "Carlos Rivera",
+    "avatarUrl": "https://i.pravatar.cc/150?img=10",
+    "bio": "🎨 Digital artist | 🖥️ Graphic designer | 🌈 Color enthusiast",
+    "followers": 2567,
+    "following": 512,
+    "posts": [10]
+  }
+]
