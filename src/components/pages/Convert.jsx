@@ -46,8 +46,14 @@ const Convert = () => {
     { id: 'ppt-to-pdf', label: 'PowerPoint to PDF', from: 'PPTX', to: 'PDF', icon: 'Presentation', color: 'orange' },
     { id: 'word-to-excel', label: 'Word to Excel', from: 'DOCX', to: 'XLSX', icon: 'ArrowRight', color: 'purple' },
     { id: 'excel-to-word', label: 'Excel to Word', from: 'XLSX', to: 'DOCX', icon: 'ArrowRight', color: 'indigo' }
-  ];
+];
 
+  const textTools = [
+    { id: 'txt-to-pdf', label: 'Text to PDF', from: 'TXT', to: 'PDF', icon: 'FileText', color: 'red' },
+    { id: 'txt-to-word', label: 'Text to Word', from: 'TXT', to: 'DOCX', icon: 'FileText', color: 'blue' },
+    { id: 'pdf-to-txt', label: 'PDF to Text', from: 'PDF', to: 'TXT', icon: 'FileText', color: 'green' },
+    { id: 'ocr-extract', label: 'OCR Text Extract', from: 'IMAGE', to: 'TXT', icon: 'FileSearch', color: 'purple' }
+  ];
   const imageTools = [
     { id: 'compress', label: 'Compress Images', icon: 'Minimize2', color: 'blue' },
     { id: 'resize', label: 'Resize Images', icon: 'Square', color: 'green' },
@@ -73,8 +79,23 @@ const Convert = () => {
       'split': '.jpg,.jpeg,.png,.gif,.bmp',
       'pdf-to-images': '.pdf',
       'images-to-pdf': '.jpg,.jpeg,.png,.gif,.bmp,.webp'
+};
+    
+    // Add new conversion types
+    const extendedTypeMap = {
+      ...typeMap,
+      'txt-to-pdf': '.txt',
+      'txt-to-word': '.txt',
+      'pdf-to-txt': '.pdf',
+      'ocr-extract': '.jpg,.jpeg,.png,.gif,.bmp,.webp,.pdf',
+      'crop': '.jpg,.jpeg,.png,.gif,.bmp,.webp',
+      'rotate': '.jpg,.jpeg,.png,.gif,.bmp,.webp',
+      'watermark': '.jpg,.jpeg,.png,.gif,.bmp,.webp',
+      'create-zip': '.jpg,.jpeg,.png,.gif,.bmp,.webp,.pdf,.doc,.docx,.txt',
+      'extract-zip': '.zip,.rar'
     };
-    return typeMap[conversionType] || '*';
+    
+    return extendedTypeMap[conversionType] || '*';
   };
 
   const handleDrag = (e) => {
@@ -144,14 +165,27 @@ const Convert = () => {
         // Update progress
         setFiles(prev => prev.map(f => 
           f.Id === fileItem.Id ? { ...f, status: 'converting', progress: 0 } : f
-        ));
+));
 
         let result;
-        if (activeTab === 'image') {
+        
+        // Determine processing type based on conversion
+        if (activeTab === 'image' || ['crop', 'rotate', 'watermark'].includes(conversionType)) {
           result = await conversionService.processImage(
             fileItem.file, 
             conversionType, 
             imageOptions
+          );
+        } else if (['txt-to-pdf', 'txt-to-word', 'pdf-to-txt', 'ocr-extract'].includes(conversionType)) {
+          result = await conversionService.processText(
+            fileItem.file, 
+            conversionType, 
+            imageOptions
+          );
+        } else if (['create-zip', 'extract-zip'].includes(conversionType)) {
+          result = await conversionService.processArchive(
+            fileItem.file, 
+            conversionType
           );
         } else {
           result = await conversionService.convertDocument(
@@ -379,7 +413,7 @@ const Convert = () => {
         id="file-upload"
         multiple={activeTab === 'batch' || activeTab === 'image'}
       />
-      <label htmlFor="file-upload">
+<label htmlFor="file-upload" className="inline-block">
         <Button variant="primary" size="lg" className="cursor-pointer">
           <ApperIcon name="Plus" className="w-5 h-5 mr-2" />
           Select Files
