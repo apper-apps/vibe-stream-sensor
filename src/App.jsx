@@ -1,22 +1,23 @@
-import { Routes, Route, Navigate } from "react-router-dom";
+import 'react-toastify/dist/ReactToastify.css'
+import { Navigate, Route, Routes } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
+import About from "@/components/pages/About";
+import Contact from "@/components/pages/Contact";
+import Convert from "@/components/pages/Convert";
+import React from "react";
+import "@/index.css";
 import Layout from "@/components/Layout";
 import Home from "@/components/pages/Home";
-import Search from "@/components/pages/Search";
-import Create from "@/components/pages/Create";
-import Profile from "@/components/pages/Profile";
-import PostDetail from "@/components/pages/PostDetail";
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="App">
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="search" element={<Search />} />
-          <Route path="create" element={<Create />} />
-          <Route path="profile/:userId" element={<Profile />} />
-          <Route path="post/:postId" element={<PostDetail />} />
+          <Route path="about" element={<About />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="convert" element={<Convert />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Route>
       </Routes>

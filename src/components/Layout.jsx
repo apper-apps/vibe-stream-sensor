@@ -4,9 +4,6 @@ import BottomNavigation from "@/components/organisms/BottomNavigation";
 import Header from "@/components/organisms/Header";
 
 const Layout = () => {
-  const location = useLocation();
-  const isCreatePage = location.pathname === "/create";
-
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col">
       {/* Header */}

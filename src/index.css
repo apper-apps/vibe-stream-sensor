@@ -84,10 +84,47 @@ body {
 
 /* Gradient text effect */
 .gradient-text {
-  background: linear-gradient(135deg, #E1306C, #833AB4);
+  background: linear-gradient(135deg, #3B82F6, #8B5CF6);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+/* File upload animations */
+@keyframes uploadPulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.05); opacity: 0.8; }
+}
+
+.upload-pulse {
+  animation: uploadPulse 2s ease-in-out infinite;
+}
+
+/* File drop zone active state */
+.drop-zone-active {
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(139, 92, 246, 0.1));
+  border-color: #3B82F6;
+}
+
+/* Conversion progress animation */
+@keyframes conversionProgress {
+  0% { width: 0%; }
+  50% { width: 60%; }
+  100% { width: 100%; }
+}
+
+.conversion-progress {
+  animation: conversionProgress 3s ease-in-out;
+}
+
+/* Success checkmark animation */
+@keyframes checkmarkSlide {
+  0% { transform: translateX(-100%); opacity: 0; }
+  100% { transform: translateX(0); opacity: 1; }
+}
+
+.checkmark-slide {
+  animation: checkmarkSlide 0.5s ease-out;
 }
 
 /* Glassmorphism effect */
